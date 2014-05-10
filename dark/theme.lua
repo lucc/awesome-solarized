@@ -8,8 +8,9 @@
 
 -- {{{ Main
 theme = {}
+theme.path = os.getenv( "HOME" ) .. "/.config/awesome/themes/awesome-solarized/dark"
 theme.default_themes_path = "/usr/share/awesome/themes"
-theme.wallpaper_cmd = { "awsetbg "..theme.default_themes_path.."/zenburn/zenburn-background.png" }
+theme.wallpaper = theme.path .. "/solarized-dark-background.png"
 theme.colors = {}
 theme.colors.base3   = "#002b36ff"
 theme.colors.base2   = "#073642ff"
@@ -76,7 +77,7 @@ theme.taglist_squares_unsel = theme.default_themes_path.."/zenburn/taglist/squar
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = theme.default_themes_path.."/zenburn/awesome-icon.png"
+theme.awesome_icon           = theme.path.."/../awesome-icon.png"
 theme.menu_submenu_icon      = theme.default_themes_path.."/default/submenu.png"
 -- }}}
 
