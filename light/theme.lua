@@ -10,7 +10,7 @@
 theme = {}
 theme.path = os.getenv( "HOME" ) .. "/.config/awesome/themes/awesome-solarized/light"
 theme.default_themes_path = "/usr/share/awesome/themes"
-theme.wallpaper_cmd = { "awsetbg "..theme.default_themes_path.."/sky/sky-background.png" }
+theme.wallpaper = theme.path .. "/solarized-light-background.png"
 theme.colors = {}
 theme.colors.base03  = "#002b36"
 theme.colors.base02  = "#073642"
@@ -31,7 +31,7 @@ theme.colors.green   = "#859900"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "ubuntu 9"
+theme.font      = "Sans 8"
 
 -- {{{ Colors
 theme.fg_normal  = theme.colors.base02
@@ -77,7 +77,7 @@ theme.taglist_squares_unsel = theme.path.."/taglist/squarez.png"
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = theme.default_themes_path.."/sky/awesome-icon.png"
+theme.awesome_icon           = theme.path.."/../awesome-icon.png"
 theme.menu_submenu_icon      = theme.default_themes_path.."/default/submenu.png"
 -- }}}
 

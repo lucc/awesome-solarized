@@ -8,29 +8,30 @@
 
 -- {{{ Main
 theme = {}
+theme.path = os.getenv( "HOME" ) .. "/.config/awesome/themes/awesome-solarized/dark"
 theme.default_themes_path = "/usr/share/awesome/themes"
-theme.wallpaper_cmd = { "awsetbg "..theme.default_themes_path.."/zenburn/zenburn-background.png" }
+theme.wallpaper = theme.path .. "/solarized-dark-background.png"
 theme.colors = {}
-theme.colors.base3   = "#002b36ff"
-theme.colors.base2   = "#073642ff"
-theme.colors.base1   = "#586e75ff"
-theme.colors.base0   = "#657b83ff"
-theme.colors.base00  = "#839496ff"
-theme.colors.base01  = "#93a1a1ff"
-theme.colors.base02  = "#eee8d5ff"
-theme.colors.base03  = "#fdf6e3ff"
-theme.colors.yellow  = "#b58900ff"
-theme.colors.orange  = "#cb4b16ff"
-theme.colors.red     = "#dc322fff"
-theme.colors.magenta = "#d33682ff"
-theme.colors.violet  = "#6c71c4ff"
-theme.colors.blue    = "#268bd2ff"
-theme.colors.cyan    = "#2aa198ff"
-theme.colors.green   = "#859900ff"
+theme.colors.base3   = "#002b36"
+theme.colors.base2   = "#073642"
+theme.colors.base1   = "#586e75"
+theme.colors.base0   = "#657b83"
+theme.colors.base00  = "#839496"
+theme.colors.base01  = "#93a1a1"
+theme.colors.base02  = "#eee8d5"
+theme.colors.base03  = "#fdf6e3"
+theme.colors.yellow  = "#b58900"
+theme.colors.orange  = "#cb4b16"
+theme.colors.red     = "#dc322f"
+theme.colors.magenta = "#d33682"
+theme.colors.violet  = "#6c71c4"
+theme.colors.blue    = "#268bd2"
+theme.colors.cyan    = "#2aa198"
+theme.colors.green   = "#859900"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "Terminus 9"
+theme.font      = "Sans 8"
 
 -- {{{ Colors
 theme.fg_normal  = theme.colors.base02
@@ -68,6 +69,28 @@ theme.menu_height = "15"
 theme.menu_width  = "100"
 -- }}}
 
+-- {{{ Graph Widgets
+theme.graph_bg = theme.bg_normal
+theme.graph_fg = theme.colors.red
+-- }}}
+
+-- {{{ Tasklist
+theme.tasklist_fg_normal = theme.colors.base0
+theme.tasklist_bg_normal = theme.bg_normal
+theme.tasklist_fg_focus	 = theme.fg_normal
+theme.tasklist_bg_focus	 = theme.bg_normal
+theme.tasklist_fg_urgent = theme.fg_normal
+theme.tasklist_bg_urgent = theme.colors.red
+theme.tasklist_fg_minimize = theme.colors.blue
+theme.tasklist_bg_minimize = theme.bg_normal
+-- }}}
+
+-- {{{ Tooltips
+theme.tooltip_border_width = 0
+theme.tooltip_fg = theme.fg_normal
+theme.tooltip_bg = theme.colors.base2
+-- }}}
+
 -- {{{ Icons
 -- {{{ Taglist
 theme.taglist_squares_sel   = theme.default_themes_path.."/zenburn/taglist/squarefz.png"
@@ -76,7 +99,7 @@ theme.taglist_squares_unsel = theme.default_themes_path.."/zenburn/taglist/squar
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = theme.default_themes_path.."/zenburn/awesome-icon.png"
+theme.awesome_icon           = theme.path.."/../awesome-icon.png"
 theme.menu_submenu_icon      = theme.default_themes_path.."/default/submenu.png"
 -- }}}
 
