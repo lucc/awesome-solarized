@@ -69,6 +69,28 @@ theme.menu_height = "15"
 theme.menu_width  = "100"
 -- }}}
 
+-- {{{ Graph Widgets
+theme.graph_bg = theme.bg_normal
+theme.graph_fg = theme.colors.red
+-- }}}
+
+-- {{{ Tasklist
+theme.tasklist_fg_normal = theme.colors.base0
+theme.tasklist_bg_normal = theme.bg_normal
+theme.tasklist_fg_focus	 = theme.fg_normal
+theme.tasklist_bg_focus	 = theme.bg_normal
+theme.tasklist_fg_urgent = theme.fg_normal
+theme.tasklist_bg_urgent = theme.colors.red
+theme.tasklist_fg_minimize = theme.colors.blue
+theme.tasklist_bg_minimize = theme.bg_normal
+-- }}}
+
+-- {{{ Tooltips
+theme.tooltip_border_width = 0
+theme.tooltip_fg = theme.fg_normal
+theme.tooltip_bg = theme.colors.base2
+-- }}}
+
 -- {{{ Icons
 -- {{{ Taglist
 theme.taglist_squares_sel   = theme.default_themes_path.."/zenburn/taglist/squarefz.png"
