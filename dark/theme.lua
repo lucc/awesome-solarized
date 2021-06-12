@@ -6,10 +6,12 @@
 -- Alternative icon sets and widget icons:
 --  * http://awesome.naquadah.org/wiki/Nice_Icons
 
+local filesystem = require("gears.filesystem")
+
 -- {{{ Main
 theme = {}
 theme.path = os.getenv( "HOME" ) .. "/.config/awesome/themes/awesome-solarized/dark"
-theme.default_themes_path = os.getenv( "HOME" ) .. "/.nix-profile/share/awesome/themes/"
+theme.default_themes_path = filesystem.get_themes_dir()
 theme.wallpaper = theme.path .. "/solarized-dark-background.png"
 theme.colors = {}
 theme.colors.base3   = "#002b36"
